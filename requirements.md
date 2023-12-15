@@ -1,6 +1,6 @@
 Idées pour les fonctionnalités du projet :
 
-Nous developpons une application qui va géré un batiment auto suffisant energétiquement.
+Nous developpons une application qui va gérer un batiment auto suffisant energétiquement.
 L'idée serait de faire différentes fonctions qui n'ont pas toute la même utilitée afin d'utiliser les données différements.
 
 Le batiment as (les fonctionnalités factultativent sont entre paranthèses):
@@ -11,3 +11,4 @@ Le batiment as (les fonctionnalités factultativent sont entre paranthèses):
 - Des rideaux. Ils s'activent si la luminosité extérieur est au dessus d'un certains seuil;
 - Des éclairages. Ils s'activent en fonction de l'heure de la journée ou de la luminosité actuelle s'il fait jour. (Ils consomment de l'énergie);
 - Un système de chauffage. Maintiens la température à un certain niveau en fonction de la température extérieur. (Il consomme de l'énergie);
+- Des plantations. Consomme de l'eau de la réserve;
