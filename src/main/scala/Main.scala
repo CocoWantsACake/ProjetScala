@@ -1,3 +1,5 @@
+import zio._
+
 @main def hello: Unit =
   println("Hello world!")
   println(msg)
