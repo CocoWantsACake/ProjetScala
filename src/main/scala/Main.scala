@@ -1,12 +1,14 @@
 import zio._
+import zio.Console._
+import zio.Duration._
 import zio.http._
 import zio.stream._
-import zio.Duration._
 import HttpStream._
 
-@main def run: ZIO[Any, Any, Unit] =
+object Main extends ZIOAppDefault {
+  
+  override def run: ZIO[Any & (ZIOAppArgs & Scope), Any, Any] = {
     val appLogic = for {
-
       _ <- ZStream(HttpStream.fetchData())
         .repeat(Schedule.spaced(30.seconds))
         .mapZIO { z =>
@@ -18,5 +20,8 @@ import HttpStream._
         }
         .foreach(Console.printLine(_))
     } yield ()
-
+  
     appLogic.provide(Client.default, Scope.default)
+  }
+
+}

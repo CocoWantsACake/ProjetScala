@@ -1,12 +1,12 @@
 import zio._
-import zio.console._
+import zio.Console._
 import zio.http._
 import zio.stream._
-import zio.duration._
+import zio.Duration._
 
-object HttpStream extends App {
+object HttpStream {
 
-  def fetchData(): ZIO[Client with Console, Throwable, Response] = {
+  def fetchData() = {
     val url = URL
       .decode(
         // appel de l'api open-meteo
@@ -20,10 +20,4 @@ object HttpStream extends App {
       res <- client.url(url).get("/")
     } yield res
   }
-
-  override def run(args: List[String]): ZIO[ZEnv, Nothing, ExitCode] =
-    fetchData().foldM(
-      error => console.putStrLn(s"Execution failed with: $error").as(ExitCode.failure),
-      _ => console.putStrLn("Execution succeeded").as(ExitCode.success)
-    )
 }
