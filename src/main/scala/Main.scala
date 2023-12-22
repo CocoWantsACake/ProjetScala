@@ -3,13 +3,13 @@ import zio.Console._
 import zio.Duration._
 import zio.http._
 import zio.stream._
-import HttpStream._
+import MergeStreams._
 
 object Main extends ZIOAppDefault {
   
   override def run: ZIO[Any & (ZIOAppArgs & Scope), Any, Any] = {
     val appLogic = for {
-      _ <- ZStream(HttpStream.fetchData())
+      _ <- ZStream(MergeStreams.mergeStreams())
         .repeat(Schedule.spaced(30.seconds))
         .mapZIO { z =>
           for {
