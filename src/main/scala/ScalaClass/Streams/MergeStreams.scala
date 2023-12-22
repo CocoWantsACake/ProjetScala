@@ -16,5 +16,4 @@ object MergeStreams {
       .grouped(5)
       .foreach(chunk => Console.printLine(chunk.foldLeft(0)((a, b) => a + b)))
   }
-
 }

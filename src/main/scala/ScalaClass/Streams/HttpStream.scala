@@ -18,6 +18,7 @@ object HttpStream {
     for {
       client <- ZIO.service[Client]
       res <- client.url(url).get("/")
-    } yield res
+      body <- res.toString
+    } yield body
   }
 }

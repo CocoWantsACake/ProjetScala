@@ -5,10 +5,10 @@ object SimpleStream {
   def createData() = {
     val run: stream.ZStream[Any, Nothing, Unit] =
         for {
-          _ <- ZStream
+          number <- ZStream
             .fromIterable((1 to 10).toList)
             .take(5)
             .map(_.toString)
-        } yield ()
+        } yield number
   }
 }
