@@ -547,6 +547,15 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
+### Metals ###
+.metals/
+.bloop/
+project/**/metals.sbt
+
+###project files###
+project/target
+target/
+
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 

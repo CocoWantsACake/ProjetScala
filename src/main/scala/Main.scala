@@ -48,9 +48,72 @@ object Main extends ZIOAppDefault {
   implicit val currentDecoder: JsonDecoder[Current] = DeriveJsonDecoder.gen[Current]
   implicit val weatherDataDecoder: JsonDecoder[WeatherData] = DeriveJsonDecoder.gen[WeatherData]
 
+  class AutonomousHome {
+    var electricityStorage: Double = 500 // kWh
+    var waterStorage: Double = 20 // Liters
+    var productedEnergy: Double = 0 // kWh
+    var productedWater: Double = 0 // Liters
+    var consumedEnergy: Double = 0 // kWh
+    var consumedWater: Double = 0 // Liters
+
+    // Méthode pour produire de l'électricité par panneau solaire
+    def solarPanelProduction(cloud_cover: Int): Double = {
+      if (cloud_cover < 100) 100 - cloud_cover else 0
+    }
+
+    // Méthode pour produire de l'électricité par éolienne
+    def eolienneProduction(windSpeed: Double): Double = {
+      windSpeed / 2
+    }
+
+    // Méthode pour produire de l'eau
+    def precipitationProduction(precipitation: Double): Double = {
+      precipitation
+    }
+
+    // Méthode pour consommer de l'électricité
+    def electriciteConsumption(isDay: Int, cloud_cover: Int, temperature: Double): Double = {
+      if (isDay == 0 || cloud_cover > 70) 5 // kWh
+      else if (temperature < 16) 10 + (16 - temperature) * 0.1 // kWh
+      else 0
+    }
+
+    // Méthode pour consommer de l'eau
+    def waterConsumption(precipitation: Double): Double = {
+      if (precipitation == 0) 50 // ml
+      else 0
+    }
+
+    // Méthode pour mettre à jour les stocks de ressources toutes les 30 secondes
+    def updateStorage(
+        cloudCover: Int,
+        windSpeed: Double,
+        precipitation: Double,
+        isDay: Int,
+        temperature: Double
+    ): Unit = {
+      val solarPanelProductionValue = solarPanelProduction(cloudCover)
+      val eolienneProductionValue = eolienneProduction(windSpeed)
+      val precipitationProductionValue = precipitationProduction(precipitation)
+      val electriciteConsumptionValue = electriciteConsumption(isDay, cloudCover, temperature)
+      val waterConsumptionValue = waterConsumption(precipitation)
+
+      productedEnergy = solarPanelProductionValue + eolienneProductionValue
+      productedWater = precipitationProductionValue
+      consumedEnergy = electriciteConsumptionValue
+      consumedWater = waterConsumptionValue
+
+      electricityStorage = (electricityStorage + productedEnergy - consumedEnergy)
+        .max(0)
+        .min(10000) // Limitation à 10 000 kWh
+      waterStorage = (waterStorage + productedWater - consumedWater)
+        .max(0)
+        .min(200) // Limitation à 200 L
+    }
+  }
 
   def printWeatherData(data: WeatherData) = {
-    Console.printLine(
+    /*Console.printLine(
       s"""
          |Latitude: ${data.latitude}
          |Longitude: ${data.longitude}
@@ -80,12 +143,13 @@ object Main extends ZIOAppDefault {
          |  Cloud Cover: ${data.current.cloud_cover}
          |  Wind Speed 10m: ${data.current.wind_speed_10m}
          |""".stripMargin
-    )
+    )*/
   }
-    
-   
+
 
   override def run: ZIO[Any & (ZIOAppArgs & Scope), Any, Any] = {
+    val autonomousHome = new AutonomousHome() // Créez une instance en dehors de la boucle
+    
     val appLogic = for {
       _ <- ZStream(MergeStreams.mergeStreams())
         .repeat(Schedule.spaced(30.seconds))
@@ -94,7 +158,19 @@ object Main extends ZIOAppDefault {
             res <- z
             body <- res.body.asString
             decoded <- ZIO.fromEither(JsonDecoder[WeatherData].decodeJson(body))
-            _ <- printWeatherData(decoded)
+            //_ <- printWeatherData(decoded)
+
+            // Appel de updateStorage avec les données météorologiques actuelles
+            _ = autonomousHome.updateStorage(
+              decoded.current.cloud_cover,
+              decoded.current.wind_speed_10m,
+              decoded.current.precipitation,
+              decoded.current.is_day,
+              decoded.current.temperature_2m
+            )
+
+            _ <- Console.printLine(s"Electricity Storage: ${autonomousHome.electricityStorage} kWh")
+            _ <- Console.printLine(s"Water Storage: ${autonomousHome.waterStorage} Liters")
           } yield body
         }
         .foreach(Console.printLine(_))
