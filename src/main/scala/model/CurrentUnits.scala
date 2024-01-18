@@ -1,5 +1,8 @@
 package model
 
+import zio.json.*
+
+// Just the units indicated inside the JSON returned by the API call
 final case class CurrentUnits(
     time: String,
     interval: String,
@@ -11,3 +14,7 @@ final case class CurrentUnits(
     cloud_cover: String,
     wind_speed_10m: String
 )
+
+object CurrentUnits {
+  implicit val decoder: JsonDecoder[CurrentUnits] = DeriveJsonDecoder.gen[CurrentUnits]
+}
