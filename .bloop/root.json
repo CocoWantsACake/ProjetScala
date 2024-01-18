@@ -2,13 +2,13 @@
     "version": "1.4.0",
     "project": {
         "name": "root",
-        "directory": "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala",
-        "workspaceDir": "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala",
+        "directory": "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala",
+        "workspaceDir": "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala",
         "sources": [
-            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala\\src\\main\\scala",
-            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala\\src\\main\\scala-3",
-            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala\\src\\main\\java",
-            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala\\target\\scala-3.3.1\\src_managed\\main"
+            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala\\src\\main\\scala",
+            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala\\src\\main\\scala-3",
+            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala\\src\\main\\java",
+            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala\\target\\scala-3.3.1\\src_managed\\main"
         ],
         "dependencies": [
             
@@ -18,8 +18,6 @@
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio_3\\2.0.20\\zio_3-2.0.20.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-streams_3\\2.0.20\\zio-streams_3-2.0.20.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-http_3\\3.0.0-RC3\\zio-http_3-3.0.0-RC3.jar",
-            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-json_3\\0.5.0\\zio-json_3-0.5.0.jar",
-            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\tototoshi\\scala-csv_3\\1.3.10\\scala-csv_3-1.3.10.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.10\\scala-library-2.13.10.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-internal-macros_3\\2.0.20\\zio-internal-macros_3-2.0.20.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-stacktracer_3\\2.0.20\\zio-stacktracer_3-2.0.20.jar",
@@ -36,8 +34,6 @@
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-json_3\\0.4.14\\zio-schema-json_3-0.4.14.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-protobuf_3\\0.4.14\\zio-schema-protobuf_3-0.4.14.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\incubator\\netty-incubator-transport-native-io_uring\\0.0.20.Final\\netty-incubator-transport-native-io_uring-0.0.20.Final-linux-x86_64.jar",
-            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_3\\2.9.0\\scala-collection-compat_3-2.9.0.jar",
-            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\magnolia1_3\\magnolia_3\\1.3.0\\magnolia_3-1.3.0.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\izumi-reflect-thirdparty-boopickle-shaded_3\\2.3.8\\izumi-reflect-thirdparty-boopickle-shaded_3-2.3.8.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-common\\4.1.100.Final\\netty-common-4.1.100.Final.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-buffer\\4.1.100.Final\\netty-buffer-4.1.100.Final.jar",
@@ -52,15 +48,18 @@
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-prelude_3\\1.0.0-RC18\\zio-prelude_3-1.0.0-RC18.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-constraintless_3\\0.3.2\\zio-constraintless_3-0.3.2.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-derivation_3\\0.4.14\\zio-schema-derivation_3-0.4.14.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-json_3\\0.5.0\\zio-json_3-0.5.0.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\incubator\\netty-incubator-transport-classes-io_uring\\0.0.20.Final\\netty-incubator-transport-classes-io_uring-0.0.20.Final.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-resolver\\4.1.100.Final\\netty-resolver-4.1.100.Final.jar",
-            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-prelude-macros_3\\1.0.0-RC18\\zio-prelude-macros_3-1.0.0-RC18.jar"
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-prelude-macros_3\\1.0.0-RC18\\zio-prelude-macros_3-1.0.0-RC18.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_3\\2.9.0\\scala-collection-compat_3-2.9.0.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\magnolia1_3\\magnolia_3\\1.3.0\\magnolia_3-1.3.0.jar"
         ],
-        "out": "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala\\.bloop\\root",
-        "classesDir": "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala\\.bloop\\root\\scala-3\\classes",
+        "out": "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala\\.bloop\\root",
+        "classesDir": "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala\\.bloop\\root\\scala-3\\classes",
         "resources": [
-            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala\\src\\main\\resources",
-            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala\\target\\scala-3.3.1\\resource_managed\\main"
+            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala\\src\\main\\resources",
+            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala\\target\\scala-3.3.1\\resource_managed\\main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -200,7 +199,7 @@
             "config": {
                 "home": "C:\\Program Files (x86)\\Java\\jre-1.8",
                 "options": [
-                    "-Duser.dir=E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala"
+                    "-Duser.dir=E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala"
                 ]
             },
             "mainClass": [
@@ -209,17 +208,15 @@
             "runtimeConfig": {
                 "home": "C:\\Program Files (x86)\\Java\\jre-1.8",
                 "options": [
-                    "-Duser.dir=E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala"
+                    "-Duser.dir=E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala"
                 ]
             },
             "classpath": [
-                "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala\\.bloop\\root\\scala-3\\classes",
+                "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala\\.bloop\\root\\scala-3\\classes",
                 "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala3-library_3\\3.3.1\\scala3-library_3-3.3.1.jar",
                 "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio_3\\2.0.20\\zio_3-2.0.20.jar",
                 "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-streams_3\\2.0.20\\zio-streams_3-2.0.20.jar",
                 "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-http_3\\3.0.0-RC3\\zio-http_3-3.0.0-RC3.jar",
-                "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-json_3\\0.5.0\\zio-json_3-0.5.0.jar",
-                "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\tototoshi\\scala-csv_3\\1.3.10\\scala-csv_3-1.3.10.jar",
                 "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.10\\scala-library-2.13.10.jar",
                 "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-internal-macros_3\\2.0.20\\zio-internal-macros_3-2.0.20.jar",
                 "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-stacktracer_3\\2.0.20\\zio-stacktracer_3-2.0.20.jar",
@@ -236,8 +233,6 @@
                 "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-json_3\\0.4.14\\zio-schema-json_3-0.4.14.jar",
                 "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-protobuf_3\\0.4.14\\zio-schema-protobuf_3-0.4.14.jar",
                 "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\incubator\\netty-incubator-transport-native-io_uring\\0.0.20.Final\\netty-incubator-transport-native-io_uring-0.0.20.Final-linux-x86_64.jar",
-                "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_3\\2.9.0\\scala-collection-compat_3-2.9.0.jar",
-                "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\magnolia1_3\\magnolia_3\\1.3.0\\magnolia_3-1.3.0.jar",
                 "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\izumi-reflect-thirdparty-boopickle-shaded_3\\2.3.8\\izumi-reflect-thirdparty-boopickle-shaded_3-2.3.8.jar",
                 "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-common\\4.1.100.Final\\netty-common-4.1.100.Final.jar",
                 "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-buffer\\4.1.100.Final\\netty-buffer-4.1.100.Final.jar",
@@ -252,9 +247,12 @@
                 "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-prelude_3\\1.0.0-RC18\\zio-prelude_3-1.0.0-RC18.jar",
                 "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-constraintless_3\\0.3.2\\zio-constraintless_3-0.3.2.jar",
                 "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-derivation_3\\0.4.14\\zio-schema-derivation_3-0.4.14.jar",
+                "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-json_3\\0.5.0\\zio-json_3-0.5.0.jar",
                 "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\incubator\\netty-incubator-transport-classes-io_uring\\0.0.20.Final\\netty-incubator-transport-classes-io_uring-0.0.20.Final.jar",
                 "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-resolver\\4.1.100.Final\\netty-resolver-4.1.100.Final.jar",
-                "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-prelude-macros_3\\1.0.0-RC18\\zio-prelude-macros_3-1.0.0-RC18.jar"
+                "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-prelude-macros_3\\1.0.0-RC18\\zio-prelude-macros_3-1.0.0-RC18.jar",
+                "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_3\\2.9.0\\scala-collection-compat_3-2.9.0.jar",
+                "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\magnolia1_3\\magnolia_3\\1.3.0\\magnolia_3-1.3.0.jar"
             ]
         },
         "resolution": {
@@ -324,40 +322,6 @@
                             "name": "zio-http_3",
                             "classifier": "sources",
                             "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-http_3\\3.0.0-RC3\\zio-http_3-3.0.0-RC3-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "dev.zio",
-                    "name": "zio-json_3",
-                    "version": "0.5.0",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "zio-json_3",
-                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-json_3\\0.5.0\\zio-json_3-0.5.0.jar"
-                        },
-                        {
-                            "name": "zio-json_3",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-json_3\\0.5.0\\zio-json_3-0.5.0-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "com.github.tototoshi",
-                    "name": "scala-csv_3",
-                    "version": "1.3.10",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "scala-csv_3",
-                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\tototoshi\\scala-csv_3\\1.3.10\\scala-csv_3-1.3.10.jar"
-                        },
-                        {
-                            "name": "scala-csv_3",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\tototoshi\\scala-csv_3\\1.3.10\\scala-csv_3-1.3.10-sources.jar"
                         }
                     ]
                 },
@@ -545,40 +509,6 @@
                             "name": "zio-schema-protobuf_3",
                             "classifier": "sources",
                             "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-protobuf_3\\0.4.14\\zio-schema-protobuf_3-0.4.14-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.scala-lang.modules",
-                    "name": "scala-collection-compat_3",
-                    "version": "2.9.0",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "scala-collection-compat_3",
-                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_3\\2.9.0\\scala-collection-compat_3-2.9.0.jar"
-                        },
-                        {
-                            "name": "scala-collection-compat_3",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_3\\2.9.0\\scala-collection-compat_3-2.9.0-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "com.softwaremill.magnolia1_3",
-                    "name": "magnolia_3",
-                    "version": "1.3.0",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "magnolia_3",
-                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\magnolia1_3\\magnolia_3\\1.3.0\\magnolia_3-1.3.0.jar"
-                        },
-                        {
-                            "name": "magnolia_3",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\magnolia1_3\\magnolia_3\\1.3.0\\magnolia_3-1.3.0-sources.jar"
                         }
                     ]
                 },
@@ -821,6 +751,23 @@
                     ]
                 },
                 {
+                    "organization": "dev.zio",
+                    "name": "zio-json_3",
+                    "version": "0.5.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio-json_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-json_3\\0.5.0\\zio-json_3-0.5.0.jar"
+                        },
+                        {
+                            "name": "zio-json_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-json_3\\0.5.0\\zio-json_3-0.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "io.netty.incubator",
                     "name": "netty-incubator-transport-classes-io_uring",
                     "version": "0.0.20.Final",
@@ -868,6 +815,40 @@
                             "name": "zio-prelude-macros_3",
                             "classifier": "sources",
                             "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-prelude-macros_3\\1.0.0-RC18\\zio-prelude-macros_3-1.0.0-RC18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-collection-compat_3",
+                    "version": "2.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-collection-compat_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_3\\2.9.0\\scala-collection-compat_3-2.9.0.jar"
+                        },
+                        {
+                            "name": "scala-collection-compat_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_3\\2.9.0\\scala-collection-compat_3-2.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.softwaremill.magnolia1_3",
+                    "name": "magnolia_3",
+                    "version": "1.3.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "magnolia_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\magnolia1_3\\magnolia_3\\1.3.0\\magnolia_3-1.3.0.jar"
+                        },
+                        {
+                            "name": "magnolia_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\magnolia1_3\\magnolia_3\\1.3.0\\magnolia_3-1.3.0-sources.jar"
                         }
                     ]
                 }

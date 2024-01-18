@@ -2,25 +2,25 @@
     "version": "1.4.0",
     "project": {
         "name": "root-test",
-        "directory": "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala",
-        "workspaceDir": "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala",
+        "directory": "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala",
+        "workspaceDir": "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala",
         "sources": [
-            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala\\src\\test\\scala",
-            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala\\src\\test\\scala-3",
-            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala\\src\\test\\java",
-            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala\\target\\scala-3.3.1\\src_managed\\test"
+            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala\\src\\test\\scala",
+            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala\\src\\test\\scala-3",
+            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala\\src\\test\\java",
+            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala\\target\\scala-3.3.1\\src_managed\\test"
         ],
         "dependencies": [
             "root"
         ],
         "classpath": [
-            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala\\.bloop\\root\\scala-3\\classes",
+            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala\\.bloop\\root\\scala-3\\classes",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala3-library_3\\3.3.1\\scala3-library_3-3.3.1.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio_3\\2.0.20\\zio_3-2.0.20.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-streams_3\\2.0.20\\zio-streams_3-2.0.20.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-http_3\\3.0.0-RC3\\zio-http_3-3.0.0-RC3.jar",
-            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-json_3\\0.5.0\\zio-json_3-0.5.0.jar",
-            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\tototoshi\\scala-csv_3\\1.3.10\\scala-csv_3-1.3.10.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalameta\\munit_3\\0.7.29\\munit_3-0.7.29.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest_3\\3.2.15\\scalatest_3-3.2.15.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.10\\scala-library-2.13.10.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-internal-macros_3\\2.0.20\\zio-internal-macros_3-2.0.20.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-stacktracer_3\\2.0.20\\zio-stacktracer_3-2.0.20.jar",
@@ -37,8 +37,21 @@
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-json_3\\0.4.14\\zio-schema-json_3-0.4.14.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-protobuf_3\\0.4.14\\zio-schema-protobuf_3-0.4.14.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\incubator\\netty-incubator-transport-native-io_uring\\0.0.20.Final\\netty-incubator-transport-native-io_uring-0.0.20.Final-linux-x86_64.jar",
-            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_3\\2.9.0\\scala-collection-compat_3-2.9.0.jar",
-            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\magnolia1_3\\magnolia_3\\1.3.0\\magnolia_3-1.3.0.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalameta\\junit-interface\\0.7.29\\junit-interface-0.7.29.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\junit\\junit\\4.13.2\\junit-4.13.2.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-core_3\\3.2.15\\scalatest-core_3-3.2.15.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-featurespec_3\\3.2.15\\scalatest-featurespec_3-3.2.15.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-flatspec_3\\3.2.15\\scalatest-flatspec_3-3.2.15.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-freespec_3\\3.2.15\\scalatest-freespec_3-3.2.15.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-funsuite_3\\3.2.15\\scalatest-funsuite_3-3.2.15.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-funspec_3\\3.2.15\\scalatest-funspec_3-3.2.15.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-propspec_3\\3.2.15\\scalatest-propspec_3-3.2.15.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-refspec_3\\3.2.15\\scalatest-refspec_3-3.2.15.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-wordspec_3\\3.2.15\\scalatest-wordspec_3-3.2.15.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-diagrams_3\\3.2.15\\scalatest-diagrams_3-3.2.15.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-matchers-core_3\\3.2.15\\scalatest-matchers-core_3-3.2.15.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-shouldmatchers_3\\3.2.15\\scalatest-shouldmatchers_3-3.2.15.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-mustmatchers_3\\3.2.15\\scalatest-mustmatchers_3-3.2.15.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\izumi-reflect-thirdparty-boopickle-shaded_3\\2.3.8\\izumi-reflect-thirdparty-boopickle-shaded_3-2.3.8.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-common\\4.1.100.Final\\netty-common-4.1.100.Final.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-buffer\\4.1.100.Final\\netty-buffer-4.1.100.Final.jar",
@@ -53,15 +66,23 @@
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-prelude_3\\1.0.0-RC18\\zio-prelude_3-1.0.0-RC18.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-constraintless_3\\0.3.2\\zio-constraintless_3-0.3.2.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-derivation_3\\0.4.14\\zio-schema-derivation_3-0.4.14.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-json_3\\0.5.0\\zio-json_3-0.5.0.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\incubator\\netty-incubator-transport-classes-io_uring\\0.0.20.Final\\netty-incubator-transport-classes-io_uring-0.0.20.Final.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalactic\\scalactic_3\\3.2.15\\scalactic_3-3.2.15.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-compatible\\3.2.15\\scalatest-compatible-3.2.15.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_3\\2.1.0\\scala-xml_3-2.1.0.jar",
             "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-resolver\\4.1.100.Final\\netty-resolver-4.1.100.Final.jar",
-            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-prelude-macros_3\\1.0.0-RC18\\zio-prelude-macros_3-1.0.0-RC18.jar"
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-prelude-macros_3\\1.0.0-RC18\\zio-prelude-macros_3-1.0.0-RC18.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_3\\2.9.0\\scala-collection-compat_3-2.9.0.jar",
+            "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\magnolia1_3\\magnolia_3\\1.3.0\\magnolia_3-1.3.0.jar"
         ],
-        "out": "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala\\.bloop\\root",
-        "classesDir": "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala\\.bloop\\root\\scala-3\\test-classes",
+        "out": "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala\\.bloop\\root",
+        "classesDir": "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala\\.bloop\\root\\scala-3\\test-classes",
         "resources": [
-            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala\\src\\test\\resources",
-            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala\\target\\scala-3.3.1\\resource_managed\\test"
+            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala\\src\\test\\resources",
+            "E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala\\target\\scala-3.3.1\\resource_managed\\test"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -201,7 +222,7 @@
             "config": {
                 "home": "C:\\Program Files (x86)\\Java\\jre-1.8",
                 "options": [
-                    "-Duser.dir=E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\ProjetScala"
+                    "-Duser.dir=E:\\Documents\\Cours\\L3_LSI\\S7\\Scala\\MonstresProjet\\ProjetScala"
                 ]
             },
             "mainClass": [
@@ -275,40 +296,6 @@
                             "name": "zio-http_3",
                             "classifier": "sources",
                             "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-http_3\\3.0.0-RC3\\zio-http_3-3.0.0-RC3-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "dev.zio",
-                    "name": "zio-json_3",
-                    "version": "0.5.0",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "zio-json_3",
-                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-json_3\\0.5.0\\zio-json_3-0.5.0.jar"
-                        },
-                        {
-                            "name": "zio-json_3",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-json_3\\0.5.0\\zio-json_3-0.5.0-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "com.github.tototoshi",
-                    "name": "scala-csv_3",
-                    "version": "1.3.10",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "scala-csv_3",
-                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\tototoshi\\scala-csv_3\\1.3.10\\scala-csv_3-1.3.10.jar"
-                        },
-                        {
-                            "name": "scala-csv_3",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\tototoshi\\scala-csv_3\\1.3.10\\scala-csv_3-1.3.10-sources.jar"
                         }
                     ]
                 },
@@ -496,40 +483,6 @@
                             "name": "zio-schema-protobuf_3",
                             "classifier": "sources",
                             "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-protobuf_3\\0.4.14\\zio-schema-protobuf_3-0.4.14-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.scala-lang.modules",
-                    "name": "scala-collection-compat_3",
-                    "version": "2.9.0",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "scala-collection-compat_3",
-                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_3\\2.9.0\\scala-collection-compat_3-2.9.0.jar"
-                        },
-                        {
-                            "name": "scala-collection-compat_3",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_3\\2.9.0\\scala-collection-compat_3-2.9.0-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "com.softwaremill.magnolia1_3",
-                    "name": "magnolia_3",
-                    "version": "1.3.0",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "magnolia_3",
-                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\magnolia1_3\\magnolia_3\\1.3.0\\magnolia_3-1.3.0.jar"
-                        },
-                        {
-                            "name": "magnolia_3",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\magnolia1_3\\magnolia_3\\1.3.0\\magnolia_3-1.3.0-sources.jar"
                         }
                     ]
                 },
@@ -772,6 +725,23 @@
                     ]
                 },
                 {
+                    "organization": "dev.zio",
+                    "name": "zio-json_3",
+                    "version": "0.5.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio-json_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-json_3\\0.5.0\\zio-json_3-0.5.0.jar"
+                        },
+                        {
+                            "name": "zio-json_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-json_3\\0.5.0\\zio-json_3-0.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "io.netty.incubator",
                     "name": "netty-incubator-transport-classes-io_uring",
                     "version": "0.0.20.Final",
@@ -819,6 +789,414 @@
                             "name": "zio-prelude-macros_3",
                             "classifier": "sources",
                             "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-prelude-macros_3\\1.0.0-RC18\\zio-prelude-macros_3-1.0.0-RC18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-collection-compat_3",
+                    "version": "2.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-collection-compat_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_3\\2.9.0\\scala-collection-compat_3-2.9.0.jar"
+                        },
+                        {
+                            "name": "scala-collection-compat_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_3\\2.9.0\\scala-collection-compat_3-2.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.softwaremill.magnolia1_3",
+                    "name": "magnolia_3",
+                    "version": "1.3.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "magnolia_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\magnolia1_3\\magnolia_3\\1.3.0\\magnolia_3-1.3.0.jar"
+                        },
+                        {
+                            "name": "magnolia_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\magnolia1_3\\magnolia_3\\1.3.0\\magnolia_3-1.3.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalameta",
+                    "name": "munit_3",
+                    "version": "0.7.29",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "munit_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalameta\\munit_3\\0.7.29\\munit_3-0.7.29.jar"
+                        },
+                        {
+                            "name": "munit_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalameta\\munit_3\\0.7.29\\munit_3-0.7.29-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest_3",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest_3\\3.2.15\\scalatest_3-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest_3\\3.2.15\\scalatest_3-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalameta",
+                    "name": "junit-interface",
+                    "version": "0.7.29",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "junit-interface",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalameta\\junit-interface\\0.7.29\\junit-interface-0.7.29.jar"
+                        },
+                        {
+                            "name": "junit-interface",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalameta\\junit-interface\\0.7.29\\junit-interface-0.7.29-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "junit",
+                    "name": "junit",
+                    "version": "4.13.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "junit",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\junit\\junit\\4.13.2\\junit-4.13.2.jar"
+                        },
+                        {
+                            "name": "junit",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\junit\\junit\\4.13.2\\junit-4.13.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-core_3",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-core_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-core_3\\3.2.15\\scalatest-core_3-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-core_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-core_3\\3.2.15\\scalatest-core_3-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-featurespec_3",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-featurespec_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-featurespec_3\\3.2.15\\scalatest-featurespec_3-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-featurespec_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-featurespec_3\\3.2.15\\scalatest-featurespec_3-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-flatspec_3",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-flatspec_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-flatspec_3\\3.2.15\\scalatest-flatspec_3-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-flatspec_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-flatspec_3\\3.2.15\\scalatest-flatspec_3-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-freespec_3",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-freespec_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-freespec_3\\3.2.15\\scalatest-freespec_3-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-freespec_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-freespec_3\\3.2.15\\scalatest-freespec_3-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funsuite_3",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funsuite_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-funsuite_3\\3.2.15\\scalatest-funsuite_3-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-funsuite_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-funsuite_3\\3.2.15\\scalatest-funsuite_3-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funspec_3",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funspec_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-funspec_3\\3.2.15\\scalatest-funspec_3-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-funspec_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-funspec_3\\3.2.15\\scalatest-funspec_3-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-propspec_3",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-propspec_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-propspec_3\\3.2.15\\scalatest-propspec_3-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-propspec_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-propspec_3\\3.2.15\\scalatest-propspec_3-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-refspec_3",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-refspec_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-refspec_3\\3.2.15\\scalatest-refspec_3-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-refspec_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-refspec_3\\3.2.15\\scalatest-refspec_3-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-wordspec_3",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-wordspec_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-wordspec_3\\3.2.15\\scalatest-wordspec_3-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-wordspec_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-wordspec_3\\3.2.15\\scalatest-wordspec_3-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-diagrams_3",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-diagrams_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-diagrams_3\\3.2.15\\scalatest-diagrams_3-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-diagrams_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-diagrams_3\\3.2.15\\scalatest-diagrams_3-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-matchers-core_3",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-matchers-core_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-matchers-core_3\\3.2.15\\scalatest-matchers-core_3-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-matchers-core_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-matchers-core_3\\3.2.15\\scalatest-matchers-core_3-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-shouldmatchers_3",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-shouldmatchers_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-shouldmatchers_3\\3.2.15\\scalatest-shouldmatchers_3-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-shouldmatchers_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-shouldmatchers_3\\3.2.15\\scalatest-shouldmatchers_3-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-mustmatchers_3",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-mustmatchers_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-mustmatchers_3\\3.2.15\\scalatest-mustmatchers_3-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-mustmatchers_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-mustmatchers_3\\3.2.15\\scalatest-mustmatchers_3-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-sbt",
+                    "name": "test-interface",
+                    "version": "1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "test-interface",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0.jar"
+                        },
+                        {
+                            "name": "test-interface",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.hamcrest",
+                    "name": "hamcrest-core",
+                    "version": "1.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "hamcrest-core",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar"
+                        },
+                        {
+                            "name": "hamcrest-core",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalactic",
+                    "name": "scalactic_3",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalactic_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalactic\\scalactic_3\\3.2.15\\scalactic_3-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalactic_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalactic\\scalactic_3\\3.2.15\\scalactic_3-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-compatible",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-compatible",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-compatible\\3.2.15\\scalatest-compatible-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-compatible",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-compatible\\3.2.15\\scalatest-compatible-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_3",
+                    "version": "2.1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_3",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_3\\2.1.0\\scala-xml_3-2.1.0.jar"
+                        },
+                        {
+                            "name": "scala-xml_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\François\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_3\\2.1.0\\scala-xml_3-2.1.0-sources.jar"
                         }
                     ]
                 }
