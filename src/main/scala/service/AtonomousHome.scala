@@ -1,36 +1,36 @@
 package service
 
-import domain.WeatherOpaqueTypes._
-import domain.StorageOpaqueTypes._
+import domain._
+//import domain._
 
 class AutonomousHome {
-    var electricityStorage: EnergyAmount = 500 // kWh
-    var waterStorage: WaterAmount = 20000 // Liters
-    var productedEnergy: EnergyAmount = 0 // kWh
-    var productedWater: EnergyAmount = 0 // Liters
-    var consumedEnergy: WaterAmount = 0 // kWh
-    var consumedWater: WaterAmount = 0 // Liters
+    var electricityStorage: EnergyAmount = EnergyAmount(500) // kWh
+    var waterStorage: WaterAmount = WaterAmount(20000) // Liters
+    var productedEnergy: EnergyAmount = EnergyAmount(0) // kWh
+    var productedWater: EnergyAmount = EnergyAmount(0) // Liters
+    var consumedEnergy: WaterAmount = WaterAmount(0) // kWh
+    var consumedWater: WaterAmount = WaterAmount(0) // Liters
 
     // Méthode pour produire de l'électricité par panneau solaire
     def solarPanelProduction(cloud_cover: CloudCover): EnergyAmount = {
-      if (cloud_cover < 100) 100 - cloud_cover else 0
+      if (cloud_cover < 100) EnergyAmount(100 - cloud_cover) else EnergyAmount(0)
     }
 
     // Méthode pour produire de l'électricité par éolienne
     def eolienneProduction(windSpeed: WindSpeed): EnergyAmount = {
-      windSpeed / 2
+      EnergyAmount(windSpeed / 2)
     }
 
     // Méthode pour produire de l'eau
     def precipitationProduction(precipitation: PrecipitationAmount): WaterAmount = {
-      precipitation
+      WaterAmount(precipitation)
     }
 
     // Méthode pour consommer de l'électricité
     def electriciteConsumption(isDay: IsDay, cloud_cover: CloudCover, temperature: TemperatureCelsius): EnergyAmount = {
-      var totalConsumption: EnergyAmount = 0
-      if (isDay == 1 && cloud_cover > 70 || isDay == 0) {
-        totalConsumption += 5 // kWh
+      var totalConsumption: EnergyAmount = EnergyAmount(0)
+      if (isDay == IsDay(1) && cloud_cover > 70 || isDay == IsDay(0)) {
+        totalConsumption = 5 // kWh
       }
       if (temperature < 16) {
         totalConsumption += 10 + (16 - temperature) * 0.1 // kWh
