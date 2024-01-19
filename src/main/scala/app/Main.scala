@@ -12,7 +12,7 @@ import model.WeatherLocationData
 object Main extends ZIOAppDefault {
 
   override def run: ZIO[Any & (ZIOAppArgs & Scope), Any, Any] = {
-    val autonomousHome = new AutonomousHome() // Créez une instance en dehors de la boucle
+    val autonomousHome = new AutonomousHome()
     
     val appLogic = for {
       _ <- ZStream(ApiCalls.fetchData())
@@ -23,7 +23,7 @@ object Main extends ZIOAppDefault {
             body <- res.body.asString
             decoded <- ZIO.fromEither(JsonDecoder[WeatherLocationData].decodeJson(body))
 
-            // Appel de updateStorage avec les données météorologiques actuelles
+            // Calling updateStorage with the queried data
             _ = autonomousHome.updateStorage(
               decoded.current.cloud_cover,
               decoded.current.wind_speed_10m,
