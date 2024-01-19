@@ -1,7 +1,7 @@
 # Scala Project : Scal'house
 
 ## Members
-Maxime Mouffron, François Mutti, Antoine Pigny, Roquier Cantin 
+Maxime Mouffron, François Mutti, Antoine Pigny, Cantin Roquier
 
 ## Our project
 Our project is an application that simulates a self-sufficient energy house. 
