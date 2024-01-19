@@ -40,7 +40,7 @@ class AutonomousHome {
     // Method to consume water
     def waterConsumption(precipitation: PrecipitationAmount): WaterAmount = {
       precipitation match {
-        case WaterAmount(0) => WaterAmount(50) // ml
+        case PrecipitationAmount(0) => WaterAmount(50) // ml
         case _ => WaterAmount(0)
       }
     }
