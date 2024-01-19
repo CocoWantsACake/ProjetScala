@@ -9,6 +9,6 @@ It's an application that will simulate a self-sufficient energy house. The goal 
 ## How does it works
 The app contacts the API every 30 seconds. After that, it gathers information like wind speed or cloud coverage, which then affects the house's resources. The app processes this data and displays the status of the house's resources. With this setup, we can observe how the house behaves over time.
 
-##How to run the app
+## How to run the app
 - Simply use sbt run
 - To run tests, use sbt test
